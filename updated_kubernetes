@@ -65,7 +65,7 @@ sudo mv kops-linux-amd64 /usr/local/bin/kops
 
 ssh-keygen (to create ssh keys to log into the cluster)
 
- kops create cluster --name=demo.awscloud.ga --state=s3://kapple78 --node-count=2 --node-size=t2.medium --zones=us-east-1a --dns-zone=awscloud.ga --cloud=aws
+ kops create cluster --name=demo.awscloud.ga --state=s3://kapple78 --node-count=2 --master-size=t2.micro --node-size=t2.micro --zones=us-east-1a --dns-zone=awscloud.ga --cloud=aws
 
 kopd edit cluster --name=demo.kapple.tk --state=s3://kapple78     to edit the cluster
 
