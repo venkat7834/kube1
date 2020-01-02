@@ -113,4 +113,7 @@ hostnamectl set-hostname ansi-master.example.com
 sudo yum  install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 sudo yum install ansible -y
 
+#to install docker on centos or RHEL 
+yum install wget -y
+wget -qO https://get.docker.com/ | sh
 
