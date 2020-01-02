@@ -108,5 +108,9 @@ the link to kube dashboard yaml file doesn’t seem to work. https://raw.githubu
 
 Should be changed to https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
 
+#!/bin/bash
+hostnamectl set-hostname ansi-master.example.com
+sudo yum  install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+sudo yum install ansible -y
 
 
